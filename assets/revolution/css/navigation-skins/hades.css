@@ -189,7 +189,7 @@ background:#000;
 .hades .tp-thumb:hover .tp-thumb-img-wrap,
 .hades .tp-thumb.selected .tp-thumb-img-wrap {
   
-   background: rgba(255,255,255,1);
+   background: rgba(30, 34, 39);
   background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(119,119,119,1) 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(119,119,119,1)));
   background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(119,119,119,1) 100%);
