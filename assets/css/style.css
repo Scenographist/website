@@ -128,7 +128,7 @@ body {
     font-family: 'Jost', sans-serif;
     color: #606060;
     font-size: 0.8rem;
-    background: #f9fafb;
+    background: #606060;
     overflow-x: hidden;
     position: relative;
 }
@@ -1408,10 +1408,10 @@ button.hamburger.animate.active:after {
     background-color: #fff !important;
 }
 .light-wrapper {
-    background-color: #f9fafb !important;
+    background-color: #606060 !important;
 }
 .gray-wrapper {
-    background-color: #f3f4f7 !important;
+    background-color: #606060 !important;
 }
 .dark-wrapper {
     background-color: #242930 !important;
@@ -1431,7 +1431,7 @@ footer.dark-wrapper,
     fill: #fff;
 }
 .fill-light-wrapper {
-    fill: #f9fafb;
+    fill: #606060;
 }
 .fill-gray-wrapper {
     fill: #f3f4f7;
