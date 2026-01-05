@@ -126,7 +126,7 @@ html {
 }
 body {
     font-family: 'Jost', sans-serif;
-    color: #606060;
+    color: #ffffff;
     font-size: 0.8rem;
     background: #606060;
     overflow-x: hidden;
@@ -233,7 +233,7 @@ h4,
 h5,
 h6 {
     margin-top: 0;
-    color: #404040;
+    color: #ffffff;
     font-weight: 500;
     letter-spacing: normal;
     margin-bottom: 0.8rem;
@@ -638,10 +638,10 @@ acronym[title] {
     -webkit-transform: translateY(0%);
     -ms-transform: translateY(0%);
     transform: translateY(0%);
-    background: rgba(var(--rgb-white), 0.95);
+    background: rgba(30, 34, 39);
 }
 .banner--stick.bg-white {
-    background: rgba(var(--rgb-white), 0.95) !important;
+    background: rgba(30, 34, 39) !important;
 }
 .banner--stick.navbar-fancy-dark {
     background: #242930 !important;
