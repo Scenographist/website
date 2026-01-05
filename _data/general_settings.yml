@@ -43,44 +43,50 @@ google_map: |
 social_accounts:
   title: "Follow Us"
   links:
-    - url: "#"
+    - url: "https://www.twitter.com/scenographist"
       icon: "jam jam-twitter"
 
-    - url: "#"
+    - url: "https://www.facebook.com/scenographist"
       icon: "jam jam-facebook"
 
-    - url: "#"
+    - url: "https://www.instagram.com/scenographist"
       icon: "jam jam-instagram"
+
+    - url: "https://www.tiktok.com/@scenographist"
+      icon: "jam jam-tiktok"
+      
+    - url: "https://www.linkedin.com/showcase/scenographist"
+      icon: "jam jam-linkedin"
 
     - url: "#"
       icon: "jam jam-vimeo"
       
-    - url: "#"
+    - url: "https://www.youtube.com/@scenographist"
       icon: "jam jam-youtube"
 
 # Site Wide External Links for footer
 external_links:
-  title: "Learn More"
+  title: "Company"
   links:
     - url: "#"
-      text: "About Us"
+      text: "Product"
     - url: "#"
-      text: "Our Story"
+      text: "Docs"
     - url: "#"
-      text: "Projects"
+      text: "News"
     - url: "#"
-      text: "Pricing"
+      text: "Careers"
     - url: "#"
-      text: "Features"
+      text: "Support"
 
 # Site Wide External Links for footer
 external_links_02:
-  title: "Need Help?"
+  title: "Legal"
   links:
     - url: "#"
-      text: "Support"
+      text: "Privacy Policy"
     - url: "#"
-      text: "Get Started"
+      text: "Terms"
     - url: "#"
       text: "Contact Us"
     - url: "#"
