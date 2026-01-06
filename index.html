@@ -37,28 +37,11 @@ slider_area:
 
 services_area:
   enable: true
-  title: Features
-  sub_title: The service we are offering is designed to meet all your business needs.
-  services:
-    - title: "AI Spatial Concept Generator"
-      sub_title: "Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo odio. Cum sociis natoque penatibus magnis dis."
-      icon: "/assets/images/icon/hs-24-hours-1.webp" 
-
-    - title: "Narrative-Driven Scene Design"
-      sub_title: "Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo odio. Cum sociis natoque penatibus magnis dis."
-      icon: "/assets/images/icon/st-payment-method.webp" 
-
-    - title: "Production-Ready Outputs"
-      sub_title: "Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo odio. Cum sociis natoque penatibus magnis dis."
-      icon: "/assets/images/icon/ms-cloud-computing.webp" 
-
-services_area:
-  enable: true
-  title: "Our Services"
+  title: "Features"
   sub_title: "The full service we are offering is specifically designed to meet your business needs"
   services:
 
-    - title: "Web Design & Development"
+    - title: "AI Spatial Concept Generator"
       image: "/assets/images/art/g1.webp"
       description: |
         Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas sed diam eget risus varius blandit sit.
@@ -70,7 +53,7 @@ services_area:
         - title: "Donec elit non mi porta gravida."
         - title: "Fusce dapibus cursus commodo."
 
-    - title: "Mobile App Development"
+    - title: "Narrative-Driven Scene Design"
       image: "/assets/images/art/g2.webp"
       description: |
         Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas sed diam eget risus varius blandit sit.
@@ -82,7 +65,7 @@ services_area:
         - title: "Donec elit non mi porta gravida."
         - title: "Fusce dapibus cursus commodo."
 
-    - title: "Corporate & Graphic Design"
+    - title: "Production-Ready Outputs"
       image: "/assets/images/art/g3.webp"
       description: |
         Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas sed diam eget risus varius blandit sit.
@@ -303,7 +286,6 @@ pricing_table:
       <div class="services-area">
       <div class="row">
         <div class="col-md-7 mx-auto">
-         <div class="space140"></div>
          <h2 class="title-color color-gray text-center">{{page.services_area.title}}</h2>
          <h3 class="display-3 text-center">{{page.services_area.sub_title}}</h3>
          <div class="space40"></div>
@@ -396,78 +378,69 @@ pricing_table:
     <!-- /.container -->
   </div>
   <!-- /.wrapper -->
-  {% endif %}
-{% if page.faq_area.enable %}
-<div class="wrapper light-wrapper">
-  <div class="container inner">
-    <div class="faq-area">
-
-      <div class="row">
-        <div class="col-md-7 mx-auto">
-          <h2 class="title-color color-gray text-center">
-            {{ page.faq_area.title }}
-          </h2>
-          <h3 class="display-3 text-center">
-            {{ page.faq_area.sub_title }}
-          </h3>
-          <div class="space40"></div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-6 mb-0">
-          <div id="accordion-1" class="accordion accordion-wrapper">
-            {% for faq in page.faq_area.faq limit:4 %}
-            <div class="accordion-item card">
-              <div class="accordion-header card-header" id="accordion-heading-1-{{ forloop.index }}">
-                <h5>
-                  <button class="collapsed"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#accordion-collapse-1-{{ forloop.index }}">
-                    {{ faq.question }}
-                  </button>
-                </h5>
-              </div>
-              <div id="accordion-collapse-1-{{ forloop.index }}"
-                   class="collapse"
-                   data-bs-parent="#accordion-1">
-                <div class="card-body">
-                  <p>{{ faq.answer }}</p>
-                </div>
+ <div class="faq-area">
+    {% if page.faq_area.enable %}
+    <div class="row">
+    	<div class="col-md-7 mx-auto">
+		    <div class="space160"></div>
+		    <h2 class="title-color color-gray text-center">{{page.faq_area.title}}</h2>
+		    <h3 class="display-3 text-center">
+		      {{page.faq_area.sub_title}}
+		    </h3>
+		    <div class="space40"></div>
+    	</div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 mb-0">
+        <div id="accordion-1" class="accordion  accordion-wrapper">
+          {% for faq in page.faq_area.faq  limit: "4" %}
+          <div class="accordion-item card">
+            <div class="accordion-header card-header" id="accordion-heading-1-{{forloop.index}}">
+              <h5>
+                <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1-{{forloop.index}}" aria-expanded="false" aria-controls="accordion-collapse-1-{{forloop.index}}">
+                 {{faq.question}}
+               </button>
+              </h5>
+            </div>
+            <div id="accordion-collapse-1-{{forloop.index}}" class="collapse" aria-labelledby="accordion-heading-1-{{forloop.index}}" data-bs-parent="#accordion-1">
+              <div class="card-body">
+                <p>{{faq.answer}}</p>
               </div>
             </div>
-            {% endfor %}
           </div>
-        </div>
-
-        <div class="col-lg-6">
-          <div id="accordion-2" class="accordion accordion-wrapper">
-            {% for faq in page.faq_area.faq offset:4 limit:4 %}
-            <div class="accordion-item card">
-              <div class="accordion-header card-header" id="accordion-heading-2-{{ forloop.index }}">
-                <h5>
-                  <button class="collapsed"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#accordion-collapse-2-{{ forloop.index }}">
-                    {{ faq.question }}
-                  </button>
-                </h5>
-              </div>
-              <div id="accordion-collapse-2-{{ forloop.index }}"
-                   class="collapse"
-                   data-bs-parent="#accordion-2">
-                <div class="card-body">
-                  <p>{{ faq.answer }}</p>
-                </div>
-              </div>
-            </div>
-            {% endfor %}
-          </div>
+          {% endfor %}
         </div>
       </div>
-
+      <!--/column -->
+      <div class="col-lg-6">
+        <div id="accordion-2" class="accordion accordion-wrapper">
+         {% for faq in page.faq_area.faq  limit: "4" offset: "4" %}
+          <div class="accordion-item card shadow">
+            <div class="accordion-header card-header" id="accordion-heading-2-{{forloop.index}}">
+              <h5>
+                <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-{{forloop.index}}" aria-expanded="false" aria-controls="accordion-collapse-2-{{forloop.index}}">
+                 {{faq.question}}
+                </button>
+              </h5>
+            </div>
+            <!-- /.card-header -->
+            <div id="accordion-collapse-2-{{forloop.index}}" class="collapse" aria-labelledby="accordion-heading-2-{{forloop.index}}" data-bs-parent="#accordion-2">
+              <div class="card-body">
+                <p>{{faq.answer}}</p>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.collapse -->
+          </div>
+          {% endfor %}
+        </div>
+        <!-- /.accordion-wrapper -->
+      </div>
+      <!--/column -->
+    </div>
+    <!--/.row -->
+    {% endif %}
     </div>
   </div>
 </div>
-{% endif %}
-  {% include layouts/footer/footer-5.html %}
+{% include layouts/footer/footer-5.html %}
