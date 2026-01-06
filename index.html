@@ -81,7 +81,7 @@ pricing_table:
   enable: true
   title: "Our Pricing"
   sub_title: 'We offer great prices, premium products and quality service for your business.'
-  bg_image: "/assets/images/art/scenographist-slider.webp"
+  bg_image: "/assets/images/art/scenographist-pricing"
   plans:
     - title: "Basic Pricing"
       monthly_price: 9
@@ -287,7 +287,7 @@ faq_area:
       {% for service in page.services_area.services %}
       {% assign chck_number = forloop.index | modulo: 2 %}
       <!--/.row -->
-      <div class="space120"></div>
+      <div class="space40"></div>
       <div class="row align-items-center">
         {% if service.image %}
         <div class="col-lg-6 order-lg-{{chck_number}}">
