@@ -68,28 +68,28 @@ social_accounts:
 external_links:
   title: "Company"
   links:
-    - url: "#"
+    - url: "/about"
       text: "About"
-    - url: "#"
+    - url: "/#pricing"
       text: "Pricing"
     - url: "#"
       text: "News"
     - url: "#"
       text: "Careers"
-    - url: "#"
+    - url: "/press"
       text: "Press"
 
 # Site Wide External Links for footer
 external_links_02:
   title: "Resources"
   links:
-    - url: "#"
+    - url: "/support"
       text: "Support"
-    - url: "#"
+    - url: "https://docs.scenographist.com"
       text: "Documentation"
-    - url: "#"
+    - url: "/tos"
       text: "Terms of Service"
-    - url: "#"
+    - url: "/privacy-policy"
       text: "Privacy Policy"
     - url: "#"
       text: "Cookie Policy"
