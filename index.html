@@ -27,13 +27,13 @@ slider_area:
     sub_title: "Export production-ready assets for design reviews, client pitches, and technical execution."
     image: "/assets/images/art/scenographist-slider3.webp"
     button_text: "Features"
-    button_url: "#"
+    button_url: "/#features"
 
   - title: "Scale Your Creative Production"
     sub_title: "Design more spaces, faster, with predictable costs and AI-assisted efficiency."
     image: "/assets/images/art/scenographist-slider4.webp"
     button_text: "Pricing"
-    button_url: "#"
+    button_url: "/#pricing"
 
 services_area:
   enable: true
@@ -276,7 +276,7 @@ faq_area:
       {% include components/clients/clients-carousel.html %}
       {% endif %}
       {% if page.services_area.enable %}
-      <div class="services-area">
+      <div id="features" class="services-area">
       <div class="row">
         <div class="col-md-7 mx-auto">
          <h2 class="title-color color-gray text-center">{{page.services_area.title}}</h2>
@@ -334,7 +334,7 @@ faq_area:
 <div class="wrapper overflow-top">
   <div class="container inner pt-0">
   	{% if page.pricing_table.enable %}
-    <div class="pricing-wrapper" data-aos="fade-up" data-aos-delay="300">
+    <div id="pricing" class="pricing-wrapper" data-aos="fade-up" data-aos-delay="300">
       <div class="row g-0">
         {% assign pricings = page.pricing_table.plans %}
         {% for pricing in pricings %}
@@ -369,7 +369,7 @@ faq_area:
       </div>
     </div>
     {% endif %}
-    <div class="faq-area">
+    <div id="FAQ" class="faq-area">
     {% if page.faq_area.enable %}
     <div class="row">
     	<div class="col-md-7 mx-auto">

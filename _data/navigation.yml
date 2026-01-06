@@ -4,10 +4,10 @@ main_menu:
     url: "/"
     
   - text: "Features"
-    url: "#"
+    url: "/#features"
 
   - text: "Pricing"
-    url: "#"
+    url: "/#pricing"
 
-  - text: "Pricing"
-    url: "#"
+  - text: "FAQ"
+    url: "/#FAQ"
