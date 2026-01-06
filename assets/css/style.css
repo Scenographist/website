@@ -106,11 +106,11 @@ iframe {
 }
 .bg-default ::-moz-selection {
     background: var(--color-white);
-    color: #606060;
+    color: #1e2227;
 }
 .bg-default ::selection {
     background: var(--color-white);
-    color: #606060;
+    color: #1e2227;
 }
 br {
     line-height: 0;
@@ -128,7 +128,7 @@ body {
     font-family: 'Jost', sans-serif;
     color: #ffffff;
     font-size: 0.8rem;
-    background: #606060;
+    background: #1e2227;
     overflow-x: hidden;
     position: relative;
 }
@@ -1408,10 +1408,10 @@ button.hamburger.animate.active:after {
     background-color: #fff !important;
 }
 .light-wrapper {
-    background-color: #606060 !important;
+    background-color: #1e2227 !important;
 }
 .gray-wrapper {
-    background-color: #606060 !important;
+    background-color: #1e2227 !important;
 }
 .dark-wrapper {
     background-color: #242930 !important;
