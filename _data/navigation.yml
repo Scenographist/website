@@ -6,5 +6,8 @@ main_menu:
   - text: "Features"
     url: "#"
 
-  - text: "Elements"
+  - text: "Pricing"
+    url: "#"
+
+  - text: "Pricing"
     url: "#"
