@@ -1,0 +1,13 @@
+main_menu:
+
+  - text: "Home"
+    url: "/"
+    
+  - text: "Features"
+    url: "#"
+
+  - text: "Pricing"
+    url: "#"
+
+  - text: "Pricing"
+    url: "#"
