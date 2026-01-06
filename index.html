@@ -23,7 +23,7 @@ slider_area:
     button_text: "Free Trial"
     button_url: "#"
 
-  - title: "Built for Professional Workflows"
+  - title: "Professional Workflows"
     sub_title: "Export production-ready assets for design reviews, client pitches, and technical execution."
     image: "/assets/images/art/scenographist-slider3.webp"
     button_text: "Features"
@@ -392,67 +392,77 @@ pricing_table:
   </div>
   <!-- /.wrapper -->
   {% endif %}
- <div class="faq-area">
-    {% if page.faq_area.enable %}
-    <div class="row">
-    	<div class="col-md-7 mx-auto">
-		    <div class="space160"></div>
-		    <h2 class="title-color color-gray text-center">{{page.faq_area.title}}</h2>
-		    <h3 class="display-3 text-center">
-		      {{page.faq_area.sub_title}}
-		    </h3>
-		    <div class="space40"></div>
-    	</div>
-    </div>
-    <div class="row">
-      <div class="col-lg-6 mb-0">
-        <div id="accordion-1" class="accordion  accordion-wrapper">
-          {% for faq in page.faq_area.faq  limit: "4" %}
-          <div class="accordion-item card">
-            <div class="accordion-header card-header" id="accordion-heading-1-{{forloop.index}}">
-              <h5>
-                <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1-{{forloop.index}}" aria-expanded="false" aria-controls="accordion-collapse-1-{{forloop.index}}">
-                 {{faq.question}}
-               </button>
-              </h5>
-            </div>
-            <div id="accordion-collapse-1-{{forloop.index}}" class="collapse" aria-labelledby="accordion-heading-1-{{forloop.index}}" data-bs-parent="#accordion-1">
-              <div class="card-body">
-                <p>{{faq.answer}}</p>
-              </div>
-            </div>
-          </div>
-          {% endfor %}
+{% if page.faq_area.enable %}
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    <div class="faq-area">
+
+      <div class="row">
+        <div class="col-md-7 mx-auto">
+          <h2 class="title-color color-gray text-center">
+            {{ page.faq_area.title }}
+          </h2>
+          <h3 class="display-3 text-center">
+            {{ page.faq_area.sub_title }}
+          </h3>
+          <div class="space40"></div>
         </div>
       </div>
-      <!--/column -->
-      <div class="col-lg-6">
-        <div id="accordion-2" class="accordion accordion-wrapper">
-         {% for faq in page.faq_area.faq  limit: "4" offset: "4" %}
-          <div class="accordion-item card shadow">
-            <div class="accordion-header card-header" id="accordion-heading-2-{{forloop.index}}">
-              <h5>
-                <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-{{forloop.index}}" aria-expanded="false" aria-controls="accordion-collapse-2-{{forloop.index}}">
-                 {{faq.question}}
-                </button>
-              </h5>
-            </div>
-            <!-- /.card-header -->
-            <div id="accordion-collapse-2-{{forloop.index}}" class="collapse" aria-labelledby="accordion-heading-2-{{forloop.index}}" data-bs-parent="#accordion-2">
-              <div class="card-body">
-                <p>{{faq.answer}}</p>
+
+      <div class="row">
+        <div class="col-lg-6 mb-0">
+          <div id="accordion-1" class="accordion accordion-wrapper">
+            {% for faq in page.faq_area.faq limit:4 %}
+            <div class="accordion-item card">
+              <div class="accordion-header card-header" id="accordion-heading-1-{{ forloop.index }}">
+                <h5>
+                  <button class="collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#accordion-collapse-1-{{ forloop.index }}">
+                    {{ faq.question }}
+                  </button>
+                </h5>
               </div>
-              <!-- /.card-body -->
+              <div id="accordion-collapse-1-{{ forloop.index }}"
+                   class="collapse"
+                   data-bs-parent="#accordion-1">
+                <div class="card-body">
+                  <p>{{ faq.answer }}</p>
+                </div>
+              </div>
             </div>
-            <!-- /.collapse -->
+            {% endfor %}
           </div>
-          {% endfor %}
         </div>
-        <!-- /.accordion-wrapper -->
+
+        <div class="col-lg-6">
+          <div id="accordion-2" class="accordion accordion-wrapper">
+            {% for faq in page.faq_area.faq offset:4 limit:4 %}
+            <div class="accordion-item card">
+              <div class="accordion-header card-header" id="accordion-heading-2-{{ forloop.index }}">
+                <h5>
+                  <button class="collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#accordion-collapse-2-{{ forloop.index }}">
+                    {{ faq.question }}
+                  </button>
+                </h5>
+              </div>
+              <div id="accordion-collapse-2-{{ forloop.index }}"
+                   class="collapse"
+                   data-bs-parent="#accordion-2">
+                <div class="card-body">
+                  <p>{{ faq.answer }}</p>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
       </div>
-      <!--/column -->
+
     </div>
-    <!--/.row -->
-    {% endif %}
-    </div>
+  </div>
+</div>
+{% endif %}
   {% include layouts/footer/footer-5.html %}
