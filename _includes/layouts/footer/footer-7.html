@@ -15,10 +15,11 @@
               <img src="{{site.data.general_settings.black_logo_1x}}" srcset="{{site.data.general_settings.black_logo_1x}} 1x, {{site.data.general_settings.black_logo_2x}} 2x" alt="{{site.data.general_settings.title}}" />
             {% endif %}
           </a>          
+          <div class="space40"></div>
           <p>{{site.data.general_settings.copyright_text}}</p>
-          <p><li><a href="{{social_info.url}}"><i class="{{social_info.icon}}"></i></a></li></p>
-            </div>
-            <!-- /.widget -->
+          {% for social_links in site.data.general_settings.social_accounts.links %}
+            <li><a href="{{social_links.url}}"><i class="{{social_links.icon}}"></i></a></li>
+           {% endfor %}
         </div>
         <!-- /.widget -->
       </div>
