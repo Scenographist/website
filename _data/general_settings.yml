@@ -69,30 +69,30 @@ external_links:
   title: "Company"
   links:
     - url: "#"
-      text: "Product"
+      text: "About"
     - url: "#"
-      text: "Docs"
+      text: "Pricing"
     - url: "#"
       text: "News"
     - url: "#"
       text: "Careers"
     - url: "#"
-      text: "Support"
+      text: "Press"
 
 # Site Wide External Links for footer
 external_links_02:
   title: "Resources"
   links:
     - url: "#"
-      text: "Privacy Policy"
+      text: "Support"
     - url: "#"
-      text: "Terms"
+      text: "Documentation"
     - url: "#"
-      text: "Contact Us"
-    - url: "#"
-      text: "Terms of Use"
+      text: "Terms of Service"
     - url: "#"
       text: "Privacy Policy"
+    - url: "#"
+      text: "Cookie Policy"
 
 # Site Wide External Links for footer
 external_links_03:
