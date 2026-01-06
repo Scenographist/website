@@ -81,7 +81,7 @@ external_links:
 
 # Site Wide External Links for footer
 external_links_02:
-  title: "Legal"
+  title: "Resources"
   links:
     - url: "#"
       text: "Privacy Policy"
