@@ -22,18 +22,6 @@
       </div>
       <!-- /column -->
       <div class="col-md-4 col-lg-3">
-        <div class="widget">
-          <h3 class="widget-title">Get in Touch</h3>
-          {% if site.data.general_settings.address_01 %}
-           <address>{{site.data.general_settings.address_01}}</address>
-          {% endif %}
-           <a href="mailto:{{site.data.general_settings.email}}">{{site.data.general_settings.email}}</a><br />
-          {{site.data.general_settings.phone_number}}
-        </div>
-        <!-- /.widget -->
-      </div>
-      <!-- /column -->
-      <div class="col-md-4 col-lg-3">
         {% assign external_links = site.data.general_settings.external_links %}
         <div class="widget">
           {% if external_links.title %}
@@ -42,6 +30,21 @@
           <ul class="list-unstyled mb-0">
             {% for links in external_links.links %}
             <li><a href="{{links.url}}">{{links.text}}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /column -->
+      <div class="col-md-4 col-lg-3">
+        {% assign external_links_02 = site.data.general_settings.external_links %}
+        <div class="widget">
+          {% if external_links_02.title %}
+           <h5 class="widget-title">{{external_links_02.title}}</h5>
+          {% endif %}
+          <ul class="list-unstyled mb-0">
+            {% for links in external_links_02.links_02 %}
+            <li><a href="{{links_02.url}}">{{links_02.text}}</a></li>
             {% endfor %}
           </ul>
         </div>
