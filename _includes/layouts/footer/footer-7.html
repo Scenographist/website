@@ -17,9 +17,11 @@
           </a>          
           <div class="space40"></div>
           <p>{{site.data.general_settings.copyright_text}}</p>
-          {% for social_links in site.data.general_settings.social_accounts.links %}
+          <ul class="social social-mute social-s ms-auto">
+            {% for social_links in site.data.general_settings.social_accounts.links %}
             <li><a href="{{social_links.url}}"><i class="{{social_links.icon}}"></i></a></li>
            {% endfor %}
+        </ul>
         </div>
         <!-- /.widget -->
       </div>
