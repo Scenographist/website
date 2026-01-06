@@ -206,7 +206,7 @@ a:not([href]):not([tabindex]):focus {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: var(--color-default);
+    color: var(--color-teal);
 }
 .font-weight-300 {
     font-weight: 300;
