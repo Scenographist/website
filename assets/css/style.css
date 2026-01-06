@@ -3555,7 +3555,7 @@ th {
 .panel.pricing .panel-title,
 .pricing .panel-body {
     border: 0;
-    background: none;
+    background: black;
 }
 .pricing .panel-footer {
     padding-top: 2.25rem;
