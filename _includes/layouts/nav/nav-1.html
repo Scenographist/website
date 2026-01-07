@@ -127,10 +127,12 @@
           <a href="/login" class="btn btn-s btn-dark w-100 text-center mb-2">LOG IN</a>
           <a href="/signup" class="btn btn-s btn-teal w-100 text-center">SIGN UP</a>
         </li>
-        <div class="space10"></div>          
+        <div class="space10"></div>
+        <li class="nav-item d-lg-none mt-3">      
             {% for social_links in site.data.general_settings.social_accounts.links %}
             <li><a href="{{social_links.url}}"><i class="{{social_links.icon}}"></i></a></li>
-           {% endfor %}
+            {% endfor %}
+        </li>
       </ul>
       <!-- /.navbar-nav -->
     </div>
