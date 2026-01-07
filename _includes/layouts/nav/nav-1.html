@@ -128,7 +128,10 @@
           <a href="/signup" class="btn btn-s btn-teal w-100 text-center">SIGN UP</a>
         </li>
         <div class="space10"></div>          
+        <ul class="social social-mute social-s ms-auto">
+            {% for social_links in site.data.general_settings.social_accounts.links %}
             <li><a href="{{social_links.url}}"><i class="{{social_links.icon}}"></i></a></li>
+           {% endfor %}
         </ul>
       </ul>
       <!-- /.navbar-nav -->
