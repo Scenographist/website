@@ -91,7 +91,7 @@ external_links_02:
       text: "Terms of Service"
     - url: "/privacy-policy"
       text: "Privacy Policy"
-    - url: "#"
+    - url: "/cookie-policy"
       text: "Cookie Policy"
 
 # Site Wide External Links for footer

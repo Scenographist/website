@@ -1,44 +1,8 @@
 ---
 layout: default
-title: "About Us"
+title: "Support"
 sub_title: "Creating quality products that make your life easier"
 header_image: "/assets/images/art/scenographist-slider4.webp"
-
-services_area: 
-  enable: true
-  title: "What We Do?"
-  sub_title: "The full service we are offering is specifically designed to meet your business needs."
-  services:
-
-    - title: "24/7 Support"
-      description: "Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo."
-      icon: "icofont-headphone-alt"
-      icon_style: "icon-blob-rose color-rose"
-  
-    - title: "Secure Payments"
-      description: "Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo."
-      icon: "icofont-safety"
-      icon_style: "icon-blob-blue color-blue"
-  
-    - title: "Daily Updates"
-      description: "Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo."
-      icon: "icofont-refresh"
-      icon_style: "icon-blob-green color-green"
-  
-    - title: "Research & Marketing"
-      description: "Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo."
-      icon: "icofont-chart-arrows-axis"
-      icon_style: "icon-blob-purple color-purple"
-  
-    - title: "System Integration"
-      description: "Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo."
-      icon: "icofont-gear"
-      icon_style: "icon-blob-orange color-orange"
-  
-    - title: "SEO Service"
-      description: "Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo."
-      icon: "icofont-earth"
-      icon_style: "icon-blob-violet color-violet"
 
 video_area:
   enable: true
@@ -105,43 +69,6 @@ testimonials:
       image: "/assets/images/art/t3.webp" 
       name: "Barclay Widerski"
       designation: "Sales Manager"
-
-pricing_table:
-  enable: true
-  title: "Our Pricing"
-  sub_title: "We offer great prices, premium products and quality service for your business."
-  pricing_url: "#"
-  pricing_text: "See All Prices"
-  description: |
-    "Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam."
-  plans:
-    - title: "Basic Pricing"
-      popular: popular
-      monthly_price: 9
-      pricing_url: "#"
-      button_text: "Choose Plan"
-      icon: "/assets/images/icons/ec-mobile.webp"
-      features:
-        - "<strong>1</strong> Project"
-        - "<strong>100K</strong> API Access"
-        - "<strong>100MB</strong> Storage"
-        - "Custom <strong>Cloud</strong> Services"
-        - "Weekly <strong>Reports</strong>"
-        - "7/24 <strong>Support</strong>"
-
-    - title: "Premium Plan"
-      monthly_price: 19
-      pricing_url: "#"
-      button_text: "Choose Plan"
-      icon: "/assets/images/icons/ec-store.webp"
-      features:
-        - "<strong>5</strong> Project"
-        - "<strong>200K</strong> API Access"
-        - "<strong>250MB</strong> Storage"
-        - "Custom <strong>Cloud</strong> Services"
-        - "Weekly <strong>Reports</strong>"
-        - "7/24 <strong>Support</strong>"
-
 
 contact_area:
   enable: true
@@ -235,40 +162,6 @@ contact_area:
 <!-- /.wrapper -->
 {% endif %}
 
-{% if page.how_it_works.enable %}
-<div class="wrapper light-wrapper">
-  <div class="container inner">
-    <div class="row align-items-center">
-      {% if page.how_it_works.image %}
-      <div class="col-lg-6 order-lg-2">
-        <figure><img src="{{page.how_it_works.image}}" alt="{{page.how_it_works.title}}"/></figure>
-      </div>
-      {% endif %}
-      <div class="space20 d-md-none"></div>
-      <div class="space50 d-none d-md-block d-lg-none"></div>
-      <div class="col-lg-6 pr-60 pr-md-15">
-        <h2 class="title-color color-gray">{{page.how_it_works.title}}</h2>
-        <h3 class="display-3">{{page.how_it_works.sub_title}}</h3>
-        {% for step in page.how_it_works.steps %}
-        <div class="space30"></div>
-        <div class="d-flex flex-row justify-content-center">
-          <div>
-            <span class="icon icon-blob {{step.icon_style}} mr-25">
-              <i class="{{step.icon}}"></i><span class="step bg-blue">{{forloop.index}}</span>
-            </span>
-          </div>
-          <div>
-            <h5>{{step.title}}</h5>
-            <p class="mb-0">{{step.description}}</p>
-          </div>
-         </div>
-        {% endfor %}
-      </div>
-    </div>
-  </div>
-</div>
-<!-- /.wrapper -->
-{% endif %}
 {% if page.testimonials.enable %}
 <div class="wrapper image-wrapper bg-image inverse-text" data-image-src="{{page.testimonials.bg_image}}">
   <div class="container inner pt-100">
@@ -305,68 +198,6 @@ contact_area:
 </div>
 <!-- /.wrapper -->
 {% endif %}
-<div class="wrapper light-wrapper">
-  <div class="container inner">
-    {% assign pricing_data = page.pricing_table %}
-    {% if pricing_data.enable %}
-    <div class="row">
-      <div class="col-lg-5 pr-50 pr-md-15">
-        <h2 class="title-color color-gray">{{pricing_data.title}}</h2>
-        <h3 class="display-3">{{pricing_data.sub_title}}</h3>
-        <div class="space20"></div>
-        <p>{{pricing_data.description}}</p>
-        <div class="space10"></div>
-        {% if pricing_data.pricing_url %}
-         <a href="{{pricing_data.pricing_url}}" class="btn">{{pricing_data.pricing_text}}</a>
-        {% endif %}
-      </div>
-      <!--/column -->
-      <div class="space70 d-none d-md-block d-lg-none"></div>
-      <div class="space20 d-md-none"></div>
-      <div class="col-lg-7">
-        <div class="pricing-wrapper">
-          <div class="row g-0">
-            {% for pricing in pricing_data.plans %}
-            <div class="col-md-6 {{pricing.popular}} ">
-              <div class="pricing panel box bg-white shadow">
-                <div class="panel-heading">
-                  <div class="prices color-dark">
-                    <div class="price price-show"><span class="price-currency">$</span><span class="price-value">{{pricing.monthly_price}}</span> <span class="price-duration">month</span></div>
-                  </div>
-                  <h4 class="panel-title mb-0">{{pricing.title}}</h4>
-                </div>
-                <!--/.panel-heading -->
-                <div class="panel-body">
-                  <table class="table">
-                    {% for features in pricing.features %}
-                      <tr>
-                         <td>{{features}}</td>
-                      </tr>
-                    {% endfor %}
-                  </table>
-                </div>
-                <!--/.panel-body -->
-                <div class="panel-footer">
-                  <a href="{{pricing.pricing_url}}" class="btn" role="button">{{pricing.button_text}}</a>
-                </div>
-              </div>
-              <!--/.pricing -->
-            </div>
-            <!--/column -->
-           {% endfor %}
-          </div>
-          <!--/.row -->
-        </div>
-        <!--/.pricing-wrapper -->
-      </div>
-      <!--/column -->
-    </div>
-    <!--/.row -->
-   {% endif %}
-  </div>
-  <!-- /.container -->
-</div>
-<!-- /.wrapper -->
 {% if page.contact_area.enable %}
 <div class="wrapper white-wrapper">
   <div class="container inner">
