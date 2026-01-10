@@ -76,7 +76,7 @@ external_links:
       text: "News"
     - url: "#"
       text: "Careers"
-    - url: "/press"
+    - url: "#"
       text: "Press"
 
 # Site Wide External Links for footer
@@ -85,7 +85,7 @@ external_links_02:
   links:
     - url: "/support"
       text: "Support"
-    - url: "https://docs.scenographist.com"
+    - url: "#"
       text: "Documentation"
     - url: "/tos"
       text: "Terms of Service"
