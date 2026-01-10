@@ -4,8 +4,65 @@ title: "Support"
 sub_title: "Creating quality products that make your life easier"
 header_image: "/assets/images/art/scenographist-slider4.webp"
 
+two_column_one:
+  enable: true
+  title: "We make your spending stress-free for you to have the perfect control"
+  image: "/assets/images/art/ui1.webp"
+  button_text: "More Details"
+  button_url: "#"
+  paragraphs:
+    - text: |
+        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl.
+    - text: |
+        Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet. Duis mollis, est non.
+
 ---
 {% include layouts/nav/nav-1.html drop_search=true %} 
 {% include layouts/header/page-title.html %}
-
+<div class="wrapper dark-wrapper">
+    <div class="wrapper overflow-top bleed-sm-s">
+        <div class="container inner pt-0">
+            <div class="features-wrapper">
+                {% if page.hero_area.enable %}
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1">
+                        <figure>
+                            <img src="{{page.hero_area.header_bottom_image}}" alt="{{page.hero_area.title}}" />
+                        </figure>
+                    </div>
+                    <!-- /column -->
+                </div>
+                {% endif %} 
+                {% if page.two_column_one.enable %}
+                <div class="two-column-one">
+                    <div class="space100"></div>
+                    <div class="row align-items-center">
+                        {% if page.two_column_one.image %}
+                        <div class="col-lg-6">
+                            <figure>
+                                <img src="{{page.two_column_one.image}}" alt="{{page.two_column_one.title}}" />
+                            </figure>
+                        </div>
+                        {% endif %}
+                        <div class="space40 d-lg-none"></div>
+                        <div class="col-lg-6 pl-60 pl-md-15">
+                            {% if page.two_column_one.title %}
+                            <h3 class="display-3">{{page.two_column_one.title}}</h3>
+                            {% endif %}
+                            <div class="space20"></div>
+                            {% for text_data in page.two_column_one.paragraphs %}
+                            <p>{{text_data.text}}</p>
+                            {% endfor %} {% if page.two_column_one.button_text %}
+                            <div class="space10"></div>
+                            <a href="{{page.two_column_one.button_url}}" class="btn btn-default">{{page.two_column_one.button_text}}</a>
+                            {% endif %}
+                        </div>
+                        <!--/column -->
+                    </div>
+                    <!--/.row -->
+                </div>
+                {% endif %} 
+            </div>
+        </div>
+    </div>
 {% include layouts/footer/footer-7.html %}
