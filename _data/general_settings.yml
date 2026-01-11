@@ -52,14 +52,11 @@ social_accounts:
     - url: "https://www.instagram.com/scenographist"
       icon: "jam jam-instagram"
 
-    - url: "https://www.tiktok.com/@scenographist"
-      icon: "jam jam-tiktok"
+    - url: "https://scenographist.tumblr.com"
+      icon: "jam jam-tumblr"
       
     - url: "https://www.linkedin.com/showcase/scenographist"
       icon: "jam jam-linkedin"
-
-    - url: "#"
-      icon: "jam jam-vimeo"
       
     - url: "https://www.youtube.com/@scenographist"
       icon: "jam jam-youtube"
