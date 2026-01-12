@@ -49,6 +49,9 @@ social_accounts:
     - url: "https://www.facebook.com/scenographist"
       icon: "jam jam-facebook"
 
+    - url: "https://www.tiktok.com/@scenographist"
+      icon: "fab fa-tiktok"
+
     - url: "https://www.instagram.com/scenographist"
       icon: "jam jam-instagram"
 
