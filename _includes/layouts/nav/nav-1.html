@@ -81,7 +81,7 @@
           <!--/.dropdown-menu -->
         </li>
         {% when "dropdown" %}
-        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="{{menu.url}}">{{menu.text}}</a>
+        <li class="nav-item"><a class="nav-link" href="{{menu.url}}">{{menu.text}}</a>
           <ul class="dropdown-menu">
             {% for level_two in menu.level_two %}
             <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">{{level_two.sub_menu_text}}</a>
