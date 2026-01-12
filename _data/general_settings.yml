@@ -85,7 +85,7 @@ external_links_02:
   links:
     - url: "/support"
       text: "Support"
-    - url: "#"
+    - url: "https://docs.scenographist.com"
       text: "Documentation"
     - url: "/tos"
       text: "Terms of Service"
