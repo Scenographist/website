@@ -2,12 +2,16 @@ main_menu:
 
   - text: "Home"
     url: "/"
+    menu_type: simple
     
   - text: "Features"
     url: "/#features"
+    menu_type: simple
 
   - text: "Pricing"
     url: "/#pricing"
+    menu_type: simple
 
   - text: "FAQ"
     url: "/#FAQ"
+    menu_type: simple
