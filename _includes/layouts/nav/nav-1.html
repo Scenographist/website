@@ -81,7 +81,45 @@
           <!--/.dropdown-menu -->
         </li>
         {% when "dropdown" %}
-        
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="{{menu.url}}">{{menu.text}}</a>
+          <ul class="dropdown-menu">
+            {% for level_two in menu.level_two %}
+            <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">{{level_two.sub_menu_text}}</a>
+              <ul class="dropdown-menu">
+                {% for sub_menu in level_two.sub_menu %}
+                <li class="nav-item"><a class="dropdown-item" href="{{sub_menu.url}}">{{sub_menu.text}}</a></li>
+                {% endfor %}
+              </ul>
+            </li>
+            {% endfor %}
+            {% if menu.level_one %}
+            {% for level_one in menu.level_one %}
+            <li><a class="dropdown-item" href="{{level_one.url}}">{{level_one.text}}</a></li>
+            {% endfor %}
+            {% endif %}
+          </ul>
+        </li>
+        {% else %}
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="{{menu.url}}">{{menu.text}}</a>
+          <ul class="dropdown-menu">
+            {% if menu.level_two %}
+            {% for level_two in menu.level_two %}
+            <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">{{level_two.sub_menu_text}}</a>
+              <ul class="dropdown-menu">
+                {% for sub_menu in level_two.sub_menu %}
+                <li class="nav-item"><a class="dropdown-item" href="{{sub_menu.url}}">{{sub_menu.text}}</a></li>
+                {% endfor %}
+              </ul>
+            </li>
+            {% endfor %}
+            {% endif %}
+            {% if menu.level_one %}
+            {% for level_one in menu.level_one %}
+            <li><a class="dropdown-item" href="{{level_one.url}}">{{level_one.text}}</a></li>
+            {% endfor %}
+            {% endif %}
+          </ul>
+        </li>
         {% endcase %}
         {% endfor %}
         <!-- Mobile-only Login/Sign Up Buttons -->
